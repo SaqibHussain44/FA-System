@@ -1,0 +1,40 @@
+<div class="flex-container">
+    <div class="lform">
+       
+        <h1 style="text-align: center; margin: 10px;"><b> Create your Account</b></h1>
+        <div class="field">
+            <p class="control has-icons-left has-icons-right">
+                <input class="input" [(ngModel)]="data.email" type="email" placeholder="Email">
+                <span class="icon is-small is-left">
+                <i class="fa fa-envelope"></i>
+                </span>
+                <span class="icon is-small is-right">
+                <i class="fa fa-check"></i>
+                </span>
+            </p>
+        </div>
+    
+        <div class="field">
+            <p class="control has-icons-left">
+                <input class="input" [(ngModel)]="data.password" type="password" placeholder="Password">
+                <span class="icon is-small is-left">
+                <i class="fa fa-lock"></i>
+                </span>
+            </p>
+        </div>
+    
+        <div class="field">
+            <p class="control">
+                <button class="button is-danger" style="float: right" (click)="register()">
+                    <span><b>Sign up</b></span>
+                    <span class="icon">
+                        <i class="fa fa-arrow-right"></i>
+                    </span>
+                </button>
+            </p>
+            <p>{{message}}</p>
+        </div>
+
+    </div>
+</div>
+        
